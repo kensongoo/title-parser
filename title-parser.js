@@ -6,6 +6,7 @@ var debug = require('debug');
 var jsdom = require('jsdom');
 var _ = require('lodash');
 var htmlencode = require('htmlencode').htmlEncode;
+var jsencode = require('js-htmlencode');
 var trim = require('trim');
 
 program
@@ -65,7 +66,7 @@ function openWebPage(url, rootElement) {
 
           getTitle(item, function(title) {
             console.log(item);
-            console.log(htmlencode(trim(title)));
+            console.log(jsencode.htmlEncode(trim(title)));
             console.log('');
           });
       })(item);
