@@ -1,0 +1,26 @@
+{
+  "name": "title-parser",
+  "version": "1.0.0",
+  "description": "A utility tool that goes through anchor tags of a webpage and extracts the title tag",
+  "main": "title-parser.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenson Goo",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.6.0",
+    "debug": "^2.1.1",
+    "grunt": "^0.4.5",
+    "htmlencode": "0.0.4",
+    "jsdom": "^3.1.1",
+    "lodash": "^3.2.0",
+    "phantom": "^0.7.2",
+    "phantomjs": "^1.9.15",
+    "sync": "^0.2.5",
+    "trim": "0.0.1"
+  },
+  "bin": {
+    "title-parser": "title-parser.js"
+  }
+}
